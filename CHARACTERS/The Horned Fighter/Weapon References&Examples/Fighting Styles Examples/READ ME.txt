@@ -1,0 +1,3 @@
+These are quick examples created using Paint.net to showcase what you can do with these animations. You can maintain a better shape and usability by having your own weapon as a seperate object from the sprites in your game studio or software.
+
+The idea is to draw a hand over your weapon, and have it move along with the characters animation.

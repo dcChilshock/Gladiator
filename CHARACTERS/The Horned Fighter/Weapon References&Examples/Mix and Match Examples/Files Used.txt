@@ -1,0 +1,20 @@
+The following files have been tweaked and put together to make a custom pose off of the character sprites.
+
+
+Fighting Stance Transition to SouthEast
+
+Stab-One-South
+Idle-Hand-SouthEast
+
+
+Spinning Example
+Horizontal1-Two-South
+Horizontal1-Two-SouthEast
+Horizontal1-Two-East
+Horizontal1-Two-NorthEast
+Horizontal1-Two-North
+Horizontal1-Two-NorthWest
+Horizontal1-Two-West
+Horizontal1-Two-SouthWest
+
+

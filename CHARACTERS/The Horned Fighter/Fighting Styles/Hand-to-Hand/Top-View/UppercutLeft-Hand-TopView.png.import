@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://blsvicp45u3xu"
+path="res://.godot/imported/UppercutLeft-Hand-TopView.png-d7d5c73044c91661ba5d0b0ff461a93a.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://CHARACTERS/The Horned Fighter/Fighting Styles/Hand-to-Hand/Top-View/UppercutLeft-Hand-TopView.png"
+dest_files=["res://.godot/imported/UppercutLeft-Hand-TopView.png-d7d5c73044c91661ba5d0b0ff461a93a.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
