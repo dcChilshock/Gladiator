@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk3q3orymq4pf"]
+
+[ext_resource type="Script" path="res://Player_ch.gd" id="1_b8lt5"]
+[ext_resource type="Texture2D" uid="uid://b44fgi5ogwxys" path="res://CHARACTERS/Knight1_Idle.png" id="2_2clta"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xua6"]
+atlas = ExtResource("2_2clta")
+region = Rect2(0, 0, 52, 52)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n64rt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xua6")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation_1",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation_2",
+"speed": 5.0
+}]
+
+[node name="Player_ch" type="CharacterBody2D"]
+script = ExtResource("1_b8lt5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_n64rt")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
