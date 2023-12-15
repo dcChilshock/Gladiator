@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d4aq1jl201v4"
-path="res://.godot/imported/manorTiles.png-7aa35478cf8d86e276b6dd931e8d3941.ctex"
+path="res://.godot/imported/manorTiles.png-3ff675aa84e9a6c9e4366c43db24c93b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/manorTiles.png"
-dest_files=["res://.godot/imported/manorTiles.png-7aa35478cf8d86e276b6dd931e8d3941.ctex"]
+source_file="res://Enviroments/manorTiles.png"
+dest_files=["res://.godot/imported/manorTiles.png-3ff675aa84e9a6c9e4366c43db24c93b.ctex"]
 
 [params]
 

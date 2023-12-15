@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjevsycljje47"
-path="res://.godot/imported/RF_Green Forest_A1.png-9d28b3bb064931bbe62ed29fe0f424db.ctex"
+path="res://.godot/imported/RF_Green Forest_A1.png-13baf7676e9207d802277317deef7c17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/WeUnderGround/RF_Green Forest_A1.png"
-dest_files=["res://.godot/imported/RF_Green Forest_A1.png-9d28b3bb064931bbe62ed29fe0f424db.ctex"]
+source_file="res://Enviroments/RF_Green Forest_A1.png"
+dest_files=["res://.godot/imported/RF_Green Forest_A1.png-13baf7676e9207d802277317deef7c17.ctex"]
 
 [params]
 
