@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7fu8saplsppt"]
+
+[ext_resource type="Texture2D" uid="uid://72hm1fuda0cc" path="res://MUST ADDS/QUACK/idleAnimation.png" id="1_yqdre"]
+[ext_resource type="Texture2D" uid="uid://dnnjgqyg6pmpl" path="res://MUST ADDS/TERMINOTAUR/Terminotaur Sprite Sheet.png" id="2_f4608"]
+
+[node name="IDEA BOARD" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "MUST ADDS 
+THE QUACK 
+TERMINATOUR"
+
+[node name="IdleAnimation" type="Sprite2D" parent="."]
+position = Vector2(189, 50)
+texture = ExtResource("1_yqdre")
+
+[node name="TerminotaurSpriteSheet" type="Sprite2D" parent="."]
+position = Vector2(171, 135)
+texture = ExtResource("2_f4608")
