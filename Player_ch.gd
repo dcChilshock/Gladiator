@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0  # 80.0
+const SPEED = 120.0  # 80.0
 # const JUMP_VELOCITY = -400.0
 const MAX_OBTAINABLE_HEALTH = 400.0
 
@@ -68,6 +68,8 @@ func get_direction_name():
 	#await $AnimatedSprite2D.animation_finished
 	#data.state = STATES.IDLE
 	#pass
+
+
 
 func pickup_money(value):
 	data.money += value
