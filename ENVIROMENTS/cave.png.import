@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmsaef0q8tmhe"
-path="res://.godot/imported/cave.png-9f1615d8f6cc5160d06b20b0fbec207c.ctex"
+path="res://.godot/imported/cave.png-2ce33169f9b56a81e7f770e379e51b14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/cave.png"
-dest_files=["res://.godot/imported/cave.png-9f1615d8f6cc5160d06b20b0fbec207c.ctex"]
+source_file="res://Enviroments/cave.png"
+dest_files=["res://.godot/imported/cave.png-2ce33169f9b56a81e7f770e379e51b14.ctex"]
 
 [params]
 

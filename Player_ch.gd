@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 120.0  # 80.0
+const SPEED = 150.0  # 80.0
 # const JUMP_VELOCITY = -400.0
 const MAX_OBTAINABLE_HEALTH = 400.0
 
@@ -167,3 +167,6 @@ func update_animation(direction):
 		
 		if $AnimatedSprite2D.animation != a_name:
 			$AnimatedSprite2D.animation = a_name
+
+#https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Body_color_light&head=Human_male_light&weapon=Longsword_alt_longsword_alt&bandana=none&headcover=none&shoulders=Epaulets_silver&bracers=Bracers_iron&gloves=none&armour=Plate_iron&belt=Leather_Belt_brown&chainmail=Chainmail_gray&sex=male&legs=Armour_iron&shoes=Armour_iron&shield=none&hat=Close_helm_steel&visor=Grated_visor_steel
+#https://www.bandlab.com/

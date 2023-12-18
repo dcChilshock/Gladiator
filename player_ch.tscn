@@ -143,13 +143,14 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nop0i"]
-radius = 5.0
-height = 20.0
+radius = 9.0
+height = 38.0
 
-[node name="Player_ch" type="CharacterBody2D"]
+[node name="knight_ch" type="CharacterBody2D"]
 script = ExtResource("1_b8lt5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.57692, 1.69231)
 sprite_frames = SubResource("SpriteFrames_n64rt")
 animation = &"idle_up"
 
