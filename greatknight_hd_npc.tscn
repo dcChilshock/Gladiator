@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://2000f8di2vxc" path="res://CHARACTERS/Download63813.png" id="1_1v40j"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1551p"]
+size = Vector2(21, 50)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_rt0to"]
 atlas = ExtResource("1_1v40j")
 region = Rect2(0, 1612, 128, 124)
@@ -10,13 +13,9 @@ region = Rect2(0, 1612, 128, 124)
 atlas = ExtResource("1_1v40j")
 region = Rect2(0, 1736, 128, 124)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wjtt2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6me6"]
 atlas = ExtResource("1_1v40j")
-region = Rect2(0, 1364, 128, 124)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_33prl"]
-atlas = ExtResource("1_1v40j")
-region = Rect2(0, 1736, 128, 124)
+region = Rect2(44, 1377, 44, 81)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jme3"]
 atlas = ExtResource("1_1v40j")
@@ -70,16 +69,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wjtt2")
+"texture": SubResource("AtlasTexture_c6me6")
 }],
 "loop": true,
 "name": &"idle_up",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_33prl")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1jme3")
 }, {
@@ -109,10 +105,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Greatknight_hd_npc" type="Node2D"]
+[node name="Greatknight_hd_npc" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_1551p")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e2xkh")
 animation = &"walk_side"
+frame_progress = 0.696511
