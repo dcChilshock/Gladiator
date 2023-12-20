@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://div3beje5cpll"
-path="res://.godot/imported/!tor1.png-aa29a8e9dc9239ee81d620869e7d468b.ctex"
+path="res://.godot/imported/!tor1.png-95f53cf11d0e03564dcf8bfcbcfe7e1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/!tor1.png"
-dest_files=["res://.godot/imported/!tor1.png-aa29a8e9dc9239ee81d620869e7d468b.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/!tor1.png"
+dest_files=["res://.godot/imported/!tor1.png-95f53cf11d0e03564dcf8bfcbcfe7e1a.ctex"]
 
 [params]
 

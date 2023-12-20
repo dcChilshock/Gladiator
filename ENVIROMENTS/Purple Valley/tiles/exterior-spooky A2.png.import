@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxm48p3r16u32"
-path="res://.godot/imported/exterior-spooky A2.png-9f36afebc831f00dc73a74aee3bbbbff.ctex"
+path="res://.godot/imported/exterior-spooky A2.png-7519fbaad9bf8c30283dbf795c2816ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/tiles/exterior-spooky A2.png"
-dest_files=["res://.godot/imported/exterior-spooky A2.png-9f36afebc831f00dc73a74aee3bbbbff.ctex"]
+source_file="res://Enviroments/Purple Valley/tiles/exterior-spooky A2.png"
+dest_files=["res://.godot/imported/exterior-spooky A2.png-7519fbaad9bf8c30283dbf795c2816ad.ctex"]
 
 [params]
 

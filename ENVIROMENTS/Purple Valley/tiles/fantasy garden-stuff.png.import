@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m07k16vvd557"
-path="res://.godot/imported/fantasy garden-stuff.png-ebcd1b3bc0cde406ebdd75112aa802ab.ctex"
+path="res://.godot/imported/fantasy garden-stuff.png-8aed696d22321365317c80d8dd901f58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/tiles/fantasy garden-stuff.png"
-dest_files=["res://.godot/imported/fantasy garden-stuff.png-ebcd1b3bc0cde406ebdd75112aa802ab.ctex"]
+source_file="res://Enviroments/Purple Valley/tiles/fantasy garden-stuff.png"
+dest_files=["res://.godot/imported/fantasy garden-stuff.png-8aed696d22321365317c80d8dd901f58.ctex"]
 
 [params]
 

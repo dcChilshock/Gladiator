@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5pjqyhmydyql"
-path="res://.godot/imported/!trittplatten-charset.png-f24ecbf5050233fd4744491ea0191412.ctex"
+path="res://.godot/imported/!trittplatten-charset.png-4359cad9bbd3bcfb98cb2a6cc503973f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/!trittplatten-charset.png"
-dest_files=["res://.godot/imported/!trittplatten-charset.png-f24ecbf5050233fd4744491ea0191412.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/!trittplatten-charset.png"
+dest_files=["res://.godot/imported/!trittplatten-charset.png-4359cad9bbd3bcfb98cb2a6cc503973f.ctex"]
 
 [params]
 

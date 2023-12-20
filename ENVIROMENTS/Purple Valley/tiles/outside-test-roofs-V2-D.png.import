@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db4jdnsg236mr"
-path="res://.godot/imported/outside-test-roofs-V2-D.png-be818450587871770476853ffb89baf4.ctex"
+path="res://.godot/imported/outside-test-roofs-V2-D.png-33fe499e0b996b5fdad70963f98b5c1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/tiles/outside-test-roofs-V2-D.png"
-dest_files=["res://.godot/imported/outside-test-roofs-V2-D.png-be818450587871770476853ffb89baf4.ctex"]
+source_file="res://Enviroments/Purple Valley/tiles/outside-test-roofs-V2-D.png"
+dest_files=["res://.godot/imported/outside-test-roofs-V2-D.png-33fe499e0b996b5fdad70963f98b5c1f.ctex"]
 
 [params]
 

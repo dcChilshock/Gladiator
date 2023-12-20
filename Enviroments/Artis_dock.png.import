@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dayugwo13p8po"
-path="res://.godot/imported/GALVwellen4%(10).png-3c34c046e2131edd2c6a480b28742fb7.ctex"
+uid="uid://bxiu5rm3rko6y"
+path="res://.godot/imported/Artis_dock.png-61910ee3f31ef88b588097ce4faea3ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVwellen4%(10).png"
-dest_files=["res://.godot/imported/GALVwellen4%(10).png-3c34c046e2131edd2c6a480b28742fb7.ctex"]
+source_file="res://Enviroments/Artis_dock.png"
+dest_files=["res://.godot/imported/Artis_dock.png-61910ee3f31ef88b588097ce4faea3ba.ctex"]
 
 [params]
 

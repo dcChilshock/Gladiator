@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0l73nuum3h4m"
-path="res://.godot/imported/Snow_Type_1.png-6bc94a4f0dd450fb8d765bf04e0e2776.ctex"
+path="res://.godot/imported/Snow_Type_1.png-9826a9f880fb2438cae916ca1f31463b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Ballsy/Dungeon_3/Snow_Type_1.png"
-dest_files=["res://.godot/imported/Snow_Type_1.png-6bc94a4f0dd450fb8d765bf04e0e2776.ctex"]
+source_file="res://Enviroments/Ballsy/Dungeon_3/Snow_Type_1.png"
+dest_files=["res://.godot/imported/Snow_Type_1.png-9826a9f880fb2438cae916ca1f31463b.ctex"]
 
 [params]
 
