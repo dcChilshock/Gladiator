@@ -372,12 +372,12 @@ position = Vector2(206, 163)
 texture = ExtResource("1_3odq4")
 
 [node name="Pixil-frame-1" type="Sprite2D" parent="."]
-position = Vector2(15, 167)
+position = Vector2(15, 160)
 rotation = 1.5708
 texture = ExtResource("1_3odq4")
 
 [node name="Pixil-frame-2" type="Sprite2D" parent="."]
-position = Vector2(16, 305)
+position = Vector2(15, 298)
 rotation = 1.5708
 texture = ExtResource("1_3odq4")
 
