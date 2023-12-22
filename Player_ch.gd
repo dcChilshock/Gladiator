@@ -171,3 +171,4 @@ func update_animation(direction):
 #https://sanderfrenken.github.io/Universal-LPC-Spritesheet-Character-Generator/#?body=Body_color_light&head=Human_male_light&weapon=Longsword_alt_longsword_alt&bandana=none&headcover=none&shoulders=Epaulets_silver&bracers=Bracers_iron&gloves=none&armour=Plate_iron&belt=Leather_Belt_brown&chainmail=Chainmail_gray&sex=male&legs=Armour_iron&shoes=Armour_iron&shield=none&hat=Close_helm_steel&visor=Grated_visor_steel
 #https://www.bandlab.com/
 #https://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
+

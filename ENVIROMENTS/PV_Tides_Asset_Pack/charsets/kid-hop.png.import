@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc2fpg1h8ab63"
-path="res://.godot/imported/kid-hop.png-d4c07249affb037fd11eb41bcfd9849b.ctex"
+path="res://.godot/imported/kid-hop.png-c736527472a5dcd505644565b4113397.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/kid-hop.png"
-dest_files=["res://.godot/imported/kid-hop.png-d4c07249affb037fd11eb41bcfd9849b.ctex"]
+source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/kid-hop.png"
+dest_files=["res://.godot/imported/kid-hop.png-c736527472a5dcd505644565b4113397.ctex"]
 
 [params]
 

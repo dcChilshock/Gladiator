@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ccx72ahpjn5pn"]
+[gd_scene load_steps=8 format=3 uid="uid://ccx72ahpjn5pn"]
 
 [ext_resource type="Texture2D" uid="uid://bjsqf444msfdf" path="res://pixil-frame-0.png" id="1_3odq4"]
 [ext_resource type="Script" path="res://startscreen.gd" id="1_p5poi"]
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="2_o3dom"]
 [ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="3_lfj7h"]
+[ext_resource type="Texture2D" uid="uid://bec51xvckoby1" path="res://STARTSCREEN.png" id="5_cya1o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j6wpv"]
 texture = ExtResource("3_lfj7h")
@@ -368,42 +369,47 @@ sources/0 = SubResource("TileSetAtlasSource_j6wpv")
 script = ExtResource("1_p5poi")
 
 [node name="Pixil-frame-0" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(206, 163)
 texture = ExtResource("1_3odq4")
 
 [node name="Pixil-frame-1" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(15, 160)
 rotation = 1.5708
 texture = ExtResource("1_3odq4")
 
 [node name="Pixil-frame-2" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(15, 298)
 rotation = 1.5708
 texture = ExtResource("1_3odq4")
 
 [node name="knight_ch" parent="." instance=ExtResource("2_o3dom")]
-visible = false
-position = Vector2(191, 197)
+position = Vector2(192, 197)
 
 [node name="TileMap" type="TileMap" parent="."]
-visible = false
 tile_set = SubResource("TileSet_eargt")
 format = 2
 layer_0/tile_data = PackedInt32Array(655372, 131072, 4, 655371, 131072, 4, 720906, 131072, 4, 786442, 131072, 4, 851978, 131072, 4, 917515, 131072, 4, 917516, 131072, 4, 851981, 131072, 4, 786445, 131072, 4, 720909, 131072, 4)
 
-[node name="Start" type="Button" parent="."]
-offset_left = 174.0
-offset_top = 192.0
-offset_right = 250.0
-offset_bottom = 215.0
+[node name="Startscreen" type="Sprite2D" parent="."]
+position = Vector2(194, 199)
+texture = ExtResource("5_cya1o")
+
+[node name="Start" type="Button" parent="Startscreen"]
+offset_left = -119.0
+offset_top = 18.0
+offset_right = -61.0
+offset_bottom = 49.0
 text = "start"
 
-[node name="Exit" type="Button" parent="."]
-offset_left = 173.0
-offset_top = 226.0
-offset_right = 249.0
-offset_bottom = 257.0
+[node name="Exit" type="Button" parent="Startscreen"]
+offset_left = 45.0
+offset_top = 19.0
+offset_right = 103.0
+offset_bottom = 50.0
 text = "exit"
 
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Startscreen/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Startscreen/Exit" to="." method="_on_exit_pressed"]

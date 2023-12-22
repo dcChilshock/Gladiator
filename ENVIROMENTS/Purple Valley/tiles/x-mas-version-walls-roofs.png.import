@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnjmacyvrpft"
-path="res://.godot/imported/x-mas-version-walls-roofs.png-7090785fec66001af2e85ad9c57349a6.ctex"
+path="res://.godot/imported/x-mas-version-walls-roofs.png-aaef628095e3a41fdc6976d3f294180c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/tiles/x-mas-version-walls-roofs.png"
-dest_files=["res://.godot/imported/x-mas-version-walls-roofs.png-7090785fec66001af2e85ad9c57349a6.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/tiles/x-mas-version-walls-roofs.png"
+dest_files=["res://.godot/imported/x-mas-version-walls-roofs.png-aaef628095e3a41fdc6976d3f294180c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds5sh3qqh4hug"
-path="res://.godot/imported/icons.png-dd88cc5e82005736b7481f0f7953be75.ctex"
+uid="uid://dakvy7i7oj06e"
+path="res://.godot/imported/pixil-frame-0 (2).png-3518ea07d4b7b07323f6a64175fb6f0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/icons/icons.png"
-dest_files=["res://.godot/imported/icons.png-dd88cc5e82005736b7481f0f7953be75.ctex"]
+source_file="res://pixil-frame-0 (2).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (2).png-3518ea07d4b7b07323f6a64175fb6f0f.ctex"]
 
 [params]
 
