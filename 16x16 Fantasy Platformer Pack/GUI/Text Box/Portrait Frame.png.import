@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dakvy7i7oj06e"
-path="res://.godot/imported/pixil-frame-0 (2).png-3518ea07d4b7b07323f6a64175fb6f0f.ctex"
+uid="uid://q7a1m2b6c3of"
+path="res://.godot/imported/Portrait Frame.png-ab230824a98a2550d767c43965aba9e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixil-frame-0 (2).png"
-dest_files=["res://.godot/imported/pixil-frame-0 (2).png-3518ea07d4b7b07323f6a64175fb6f0f.ctex"]
+source_file="res://16x16 Fantasy Platformer Pack/GUI/Text Box/Portrait Frame.png"
+dest_files=["res://.godot/imported/Portrait Frame.png-ab230824a98a2550d767c43965aba9e2.ctex"]
 
 [params]
 

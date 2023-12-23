@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ncca6n1d81vi"
-path="res://.godot/imported/Player_LowerPart.png-614aca63883e4d4444a34dc353a08821.ctex"
+uid="uid://byrasl0rnwd2j"
+path="res://.godot/imported/House (Outside) Tileset.png-2877c211c2778754fbd11540f9ee0bed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player_LowerPart.png"
-dest_files=["res://.godot/imported/Player_LowerPart.png-614aca63883e4d4444a34dc353a08821.ctex"]
+source_file="res://ENVIROMENTS/Tilesets/House (Outside) Tileset.png"
+dest_files=["res://.godot/imported/House (Outside) Tileset.png-2877c211c2778754fbd11540f9ee0bed.ctex"]
 
 [params]
 
