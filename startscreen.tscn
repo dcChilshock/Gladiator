@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://startscreen.gd" id="1_p5poi"]
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="2_o3dom"]
-[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="3_lfj7h"]
+[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://Enviroments/cave.png" id="3_lfj7h"]
 [ext_resource type="Texture2D" uid="uid://bec51xvckoby1" path="res://INTERFACE/STARTSCREEN.png" id="5_irwck"]
 [ext_resource type="Texture2D" uid="uid://72hm1fuda0cc" path="res://MUST ADDS/QUACK/idleAnimation.png" id="6_t8sng"]
 [ext_resource type="Texture2D" uid="uid://bcdmi1g4cuyi7" path="res://CHARACTERS/WhiteCat.png" id="7_cyrn5"]
+[ext_resource type="Texture2D" uid="uid://cjpjuv17jmmuk" path="res://INTERFACE/Startimage.png" id="8_jsvmv"]
 [ext_resource type="Texture2D" uid="uid://dnnjgqyg6pmpl" path="res://MUST ADDS/TERMINOTAUR/Terminotaur Sprite Sheet.png" id="8_m6d5n"]
-[ext_resource type="Texture2D" path="res://Startimage.png" id="8_nvyjh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j6wpv"]
 texture = ExtResource("3_lfj7h")
@@ -398,19 +398,8 @@ hframes = 5
 frame = 1
 
 [node name="Startscreen2" type="Sprite2D" parent="."]
-position = Vector2(191, 206)
+position = Vector2(192, 208)
 texture = ExtResource("5_irwck")
-
-[node name="Startimage" type="Sprite2D" parent="Startscreen2"]
-position = Vector2(5, -23)
-texture = ExtResource("8_nvyjh")
-
-[node name="Start" type="Button" parent="Startscreen2/Startimage"]
-visible = false
-offset_left = -55.0
-offset_top = -31.0
-offset_right = 31.0
-text = "start"
 
 [node name="Exit" type="Button" parent="Startscreen2"]
 offset_left = -36.0
@@ -426,6 +415,16 @@ offset_right = 28.0
 offset_bottom = 43.0
 text = "settings"
 
-[connection signal="pressed" from="Startscreen2/Startimage/Start" to="." method="_on_start_pressed"]
+[node name="Start" type="Button" parent="."]
+offset_left = 144.0
+offset_top = 157.0
+offset_right = 231.0
+offset_bottom = 180.0
+
+[node name="Startimage" type="Sprite2D" parent="Start"]
+position = Vector2(56, 26)
+texture = ExtResource("8_jsvmv")
+
 [connection signal="pressed" from="Startscreen2/Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Startscreen2/settings" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]

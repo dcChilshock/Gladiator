@@ -13,8 +13,9 @@ func _process(delta):
 
 
 func _on_start_pressed():
-	pass
+	
 	#make character enter first or stored scene data
+	get_tree().change_scene_to_file("res://ulysses_interior.tscn")
 
 
 func _on_exit_pressed():

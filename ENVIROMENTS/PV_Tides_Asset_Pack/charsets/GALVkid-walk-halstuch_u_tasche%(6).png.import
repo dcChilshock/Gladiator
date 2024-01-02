@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bni7itwkbh283"
-path="res://.godot/imported/GALVkid-walk-halstuch_u_tasche%(6).png-190ab92e8366d7641b937cee0b0abb72.ctex"
+path="res://.godot/imported/GALVkid-walk-halstuch_u_tasche%(6).png-50f653ed406f42f7ca299927579c9d51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/GALVkid-walk-halstuch_u_tasche%(6).png"
-dest_files=["res://.godot/imported/GALVkid-walk-halstuch_u_tasche%(6).png-190ab92e8366d7641b937cee0b0abb72.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVkid-walk-halstuch_u_tasche%(6).png"
+dest_files=["res://.godot/imported/GALVkid-walk-halstuch_u_tasche%(6).png-50f653ed406f42f7ca299927579c9d51.ctex"]
 
 [params]
 
