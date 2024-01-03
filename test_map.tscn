@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://1h0fyysfneh5"]
+[gd_scene load_steps=98 format=3 uid="uid://1h0fyysfneh5"]
 
 [ext_resource type="Texture2D" uid="uid://uqtw02a2mfxn" path="res://Enviroments/Ballsy/Dungeon_2/Dungeon_2.png" id="2_hdvpp"]
 [ext_resource type="Texture2D" uid="uid://bukba0i4t8kfs" path="res://SHIPPACK/Ocean1.png" id="3_aidfw"]
@@ -35,6 +35,7 @@
 [ext_resource type="Texture2D" uid="uid://dol01mj456ajw" path="res://Enviroments/manorTilesDeco.png" id="32_tnw6b"]
 [ext_resource type="Texture2D" uid="uid://d2sofxdoxvu7w" path="res://Enviroments/Inner.png" id="33_5e60n"]
 [ext_resource type="Texture2D" uid="uid://2000f8di2vxc" path="res://CHARACTERS/Download63813.png" id="35_djjik"]
+[ext_resource type="PackedScene" uid="uid://b0qlbngsvb0ed" path="res://hud_classic.tscn" id="37_8y3bc"]
 [ext_resource type="PackedScene" uid="uid://dmqdb2cxwnu5t" path="res://change_lvl_1.tscn" id="37_jtfy8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rgqso"]
@@ -61759,6 +61760,8 @@ vframes = 37
 frame = 95
 
 [node name="knight_ch" parent="." instance=ExtResource("8_e5dds")]
+position = Vector2(120, 64)
+data = null
 
 [node name="Label" type="Label" parent="."]
 offset_left = -1714.0
@@ -61775,5 +61778,7 @@ position = Vector2(256, 192)
 
 [node name="CollisionShape2D" parent="Change_lvl_1" index="0"]
 position = Vector2(-22, -2)
+
+[node name="HUD_classic" parent="." instance=ExtResource("37_8y3bc")]
 
 [editable path="Change_lvl_1"]

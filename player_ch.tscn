@@ -148,6 +148,7 @@ height = 38.0
 
 [node name="knight_ch" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_b8lt5")
+data = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.57692, 1.69231)

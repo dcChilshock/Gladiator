@@ -8,8 +8,8 @@ const MAX_OBTAINABLE_HEALTH = 400.0
 enum STATES { IDLE=0, DEAD, DAMAGED, ATTACKING, CHARGING }
 
 @export var data = {
-	"max_health": 60.0,  # 20hp per heart; 5 per fraction
-	"health": 60.0,      # Min 60 Max 400
+	"max_health": 100.0,  # 20hp per heart; 5 per fraction
+	"health": 100.0,      # Min 60 Max 400
 	"money": 0,
 	"state": STATES.IDLE,
 	"secondaries": [],
@@ -25,10 +25,10 @@ var damage_lock = 0.0
 #var slash_scene = preload("res://entities/attacks/slash.tscn")
 #var menu_scene = preload("res://my_gui.tscn")
 #var attack_sound = preload("res://assets/sounds/slash.wav")
-##var damage_shader = preload("res://assets/shaders/take_damage.tres")
-#var menu_instance = null
+var damage_shader = preload("res://assets/shaders/take_damage.tres")
+var menu_instance = null
 
-#@onready var p_HUD = get_tree().get_first_node_in_group("HUD")
+@onready var p_HUD = get_tree().get_first_node_in_group("HUD")
 #@onready var aud_player = $AudioStreamPlayer2D
 # Add and preload sounds for attack, death, hurt, coin, miniheart, charge_attack
 # aud_player.stream = whatever_sound
@@ -79,13 +79,13 @@ func pickup_health(value):
 	data.health = clamp(data.health, 0, data.max_health)
 
 func _ready():
-	#p_HUD.show()
-	#menu_instance = menu_scene.instantiate() (#This is calling the hud)
+	p_HUD.show()
+	#menu_instance = menu_scene.instantiate() 
 	#get_tree().get_root().add_child.call_deferred(menu_instance)
 	#menu_instance.hide()
 
 
-#signal health_depleted
+signal health_depleted
 
 #func take_damage(dmg):
 	#if damage_lock == 0.0:
