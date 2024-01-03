@@ -373,6 +373,7 @@ script = ExtResource("1_p5poi")
 
 [node name="knight_ch" parent="." instance=ExtResource("2_o3dom")]
 position = Vector2(192, 197)
+data = null
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_eargt")
