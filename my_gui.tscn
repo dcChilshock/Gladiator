@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6uq3qntecm0p"]
+
+[ext_resource type="Script" path="res://my_gui.gd" id="1_3wlst"]
+[ext_resource type="FontFile" uid="uid://b0pyhjhlgr6hr" path="res://PotatoFont.ttf" id="2_joxcb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rnwgu"]
+font = ExtResource("2_joxcb")
+font_size = 31
+
+[node name="my_gui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3wlst")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 642.0
+
+[node name="Vboxthing" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 177.0
+offset_right = 832.0
+offset_bottom = 450.0
+
+[node name="resume" type="Button" parent="Vboxthing"]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 75.0
+offset_right = 282.0
+offset_bottom = 108.0
+
+[node name="Label" type="Label" parent="Vboxthing/resume"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 76.0
+offset_bottom = 34.0
+text = "CONTINUE"
+label_settings = SubResource("LabelSettings_rnwgu")
+
+[node name="quit" type="Button" parent="Vboxthing"]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 142.0
+offset_right = 286.0
+offset_bottom = 175.0
+
+[node name="Label2" type="Label" parent="Vboxthing/quit"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 2.0
+offset_right = 54.0
+offset_bottom = 30.0
+text = "QUIT"
+label_settings = SubResource("LabelSettings_rnwgu")
+
+[connection signal="pressed" from="Vboxthing/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Vboxthing/quit" to="." method="_on_quit_pressed"]

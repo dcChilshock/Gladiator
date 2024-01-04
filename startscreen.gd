@@ -11,7 +11,6 @@ func _process(delta):
 	pass
 
 
-
 func _on_start_pressed():
 	
 	#make character enter first or stored scene data

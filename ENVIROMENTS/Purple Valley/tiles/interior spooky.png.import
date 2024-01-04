@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p7rf05mnk2nb"
-path="res://.godot/imported/interior spooky.png-a8db1cd081c27412feb404e621821811.ctex"
+path="res://.godot/imported/interior spooky.png-a8b2106863b8e1ef2704bacc325c9f18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/tiles/interior spooky.png"
-dest_files=["res://.godot/imported/interior spooky.png-a8db1cd081c27412feb404e621821811.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/tiles/interior spooky.png"
+dest_files=["res://.godot/imported/interior spooky.png-a8b2106863b8e1ef2704bacc325c9f18.ctex"]
 
 [params]
 

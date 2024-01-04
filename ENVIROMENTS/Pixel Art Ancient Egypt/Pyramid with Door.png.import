@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5m3ymumny1er"
-path="res://.godot/imported/Pyramid with Door.png-973d48184d03c32ac3f71cc76e3cebc3.ctex"
+path="res://.godot/imported/Pyramid with Door.png-61a98f621ba77075db69d6363d1cc72b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Pixel Art Ancient Egypt/Pyramid with Door.png"
-dest_files=["res://.godot/imported/Pyramid with Door.png-973d48184d03c32ac3f71cc76e3cebc3.ctex"]
+source_file="res://ENVIROMENTS/Pixel Art Ancient Egypt/Pyramid with Door.png"
+dest_files=["res://.godot/imported/Pyramid with Door.png-61a98f621ba77075db69d6363d1cc72b.ctex"]
 
 [params]
 

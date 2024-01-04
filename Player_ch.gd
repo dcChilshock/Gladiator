@@ -23,9 +23,9 @@ var damage_lock = 0.0
 
 
 #var slash_scene = preload("res://entities/attacks/slash.tscn")
-#var menu_scene = preload("res://my_gui.tscn")
+var menu_scene = preload("res://my_gui.tscn")
 #var attack_sound = preload("res://assets/sounds/slash.wav")
-var damage_shader = preload("res://assets/shaders/take_damage.tres")
+#var damage_shader = preload("res://assets/shaders/take_damage.tres")
 var menu_instance = null
 
 @onready var p_HUD = get_tree().get_first_node_in_group("HUD")
@@ -80,9 +80,9 @@ func pickup_health(value):
 
 func _ready():
 	p_HUD.show()
-	#menu_instance = menu_scene.instantiate() 
-	#get_tree().get_root().add_child.call_deferred(menu_instance)
-	#menu_instance.hide()
+	menu_instance = menu_scene.instantiate() 
+	get_tree().get_root().add_child.call_deferred(menu_instance)
+	menu_instance.hide()
 
 
 signal health_depleted
@@ -103,7 +103,7 @@ signal health_depleted
 			#health_depleted.emit()
 		#else:
 			# TODO: play damage sound
-			pass
+	#pass
 
 
 

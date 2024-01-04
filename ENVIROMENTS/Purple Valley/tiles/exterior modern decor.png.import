@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2xvc0tnrmnsj"
-path="res://.godot/imported/exterior modern decor.png-f60299db00597f71128ccb0b0db72809.ctex"
+path="res://.godot/imported/exterior modern decor.png-77daf897a3b7e318096e5a3ad4a74205.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/tiles/exterior modern decor.png"
-dest_files=["res://.godot/imported/exterior modern decor.png-f60299db00597f71128ccb0b0db72809.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/tiles/exterior modern decor.png"
+dest_files=["res://.godot/imported/exterior modern decor.png-77daf897a3b7e318096e5a3ad4a74205.ctex"]
 
 [params]
 
