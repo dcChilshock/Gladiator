@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtat0765nhvsc"
-path="res://.godot/imported/GALVkid-walk%(6).png-cec1e14036e63f47d5109e3d49a1eb8b.ctex"
+path="res://.godot/imported/GALVkid-walk%(6).png-78a8984ba9cca71f6d453dc8839c4dc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/GALVkid-walk%(6).png"
-dest_files=["res://.godot/imported/GALVkid-walk%(6).png-cec1e14036e63f47d5109e3d49a1eb8b.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVkid-walk%(6).png"
+dest_files=["res://.godot/imported/GALVkid-walk%(6).png-78a8984ba9cca71f6d453dc8839c4dc4.ctex"]
 
 [params]
 

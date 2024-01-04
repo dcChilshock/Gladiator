@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhhyp1ewxst4e"
-path="res://.godot/imported/autotile-templateMV-snow-ice.png-f7a463fbcc5bc5e9fbf5eeb966cd7c44.ctex"
+path="res://.godot/imported/autotile-templateMV-snow-ice.png-1a69664b317de6b8b979f4ccad2819c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/tiles/autotile-templateMV-snow-ice.png"
-dest_files=["res://.godot/imported/autotile-templateMV-snow-ice.png-f7a463fbcc5bc5e9fbf5eeb966cd7c44.ctex"]
+source_file="res://Enviroments/Purple Valley/tiles/autotile-templateMV-snow-ice.png"
+dest_files=["res://.godot/imported/autotile-templateMV-snow-ice.png-1a69664b317de6b8b979f4ccad2819c3.ctex"]
 
 [params]
 

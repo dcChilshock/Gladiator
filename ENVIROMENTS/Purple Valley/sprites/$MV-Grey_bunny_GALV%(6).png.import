@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4xnfry4o1j1o"
-path="res://.godot/imported/$MV-Grey_bunny_GALV%(6).png-1e340e2ba2b8a64d695329e48c48b877.ctex"
+path="res://.godot/imported/$MV-Grey_bunny_GALV%(6).png-a3262312e80a53a1243cd785723c55ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/sprites/$MV-Grey_bunny_GALV%(6).png"
-dest_files=["res://.godot/imported/$MV-Grey_bunny_GALV%(6).png-1e340e2ba2b8a64d695329e48c48b877.ctex"]
+source_file="res://Enviroments/Purple Valley/sprites/$MV-Grey_bunny_GALV%(6).png"
+dest_files=["res://.godot/imported/$MV-Grey_bunny_GALV%(6).png-a3262312e80a53a1243cd785723c55ca.ctex"]
 
 [params]
 

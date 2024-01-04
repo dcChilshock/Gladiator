@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y255u0k14py2"
-path="res://.godot/imported/TEST Home E.png-9f2b4b1a651fce6aa68ce4ddab0e5388.ctex"
+path="res://.godot/imported/TEST Home E.png-a08221a9613c6ba376cc2ee0e6e505f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/tilesets/exterior modern/TEST Home E.png"
-dest_files=["res://.godot/imported/TEST Home E.png-9f2b4b1a651fce6aa68ce4ddab0e5388.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/tilesets/exterior modern/TEST Home E.png"
+dest_files=["res://.godot/imported/TEST Home E.png-a08221a9613c6ba376cc2ee0e6e505f8.ctex"]
 
 [params]
 

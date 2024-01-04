@@ -79,7 +79,7 @@ func pickup_health(value):
 	data.health = clamp(data.health, 0, data.max_health)
 
 func _ready():
-	p_HUD.show()
+	#p_HUD.show()
 	menu_instance = menu_scene.instantiate() 
 	get_tree().get_root().add_child.call_deferred(menu_instance)
 	menu_instance.hide()
