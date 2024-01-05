@@ -79,7 +79,7 @@ func pickup_health(value):
 	data.health = clamp(data.health, 0, data.max_health)
 
 func _ready():
-	#p_HUD.show()
+	p_HUD.show()
 	menu_instance = menu_scene.instantiate() 
 	get_tree().get_root().add_child.call_deferred(menu_instance)
 	menu_instance.hide()
@@ -137,9 +137,10 @@ func _physics_process(delta):
 			#charge_start_time = Time.get_time_dict_from_system().second
 			#data.state = STATES.CHARGING
 		
-	#if Input.is_action_just_pressed("ui_cancel"):
-		#menu_instance.show() SHOWING ESCAPE SCREEN
-		#get_tree().paused = true
+	if Input.is_action_just_pressed("ui_cancel"):
+		menu_instance.global_position = self.global_position
+		menu_instance.show() 
+		get_tree().paused = true
 
 
 func update_animation(direction):
