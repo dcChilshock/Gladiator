@@ -36,10 +36,10 @@ offset_bottom = 135.272
 
 [node name="resume" type="Button" parent="."]
 layout_mode = 0
-offset_left = -40.0
-offset_top = 3.0
-offset_right = 36.0
-offset_bottom = 35.0
+offset_left = -37.0
+offset_top = -44.0
+offset_right = 39.0
+offset_bottom = -12.0
 
 [node name="Label" type="Label" parent="resume"]
 layout_mode = 0
@@ -52,10 +52,10 @@ label_settings = SubResource("LabelSettings_rnwgu")
 
 [node name="quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = -38.0
-offset_top = 51.0
-offset_right = 38.0
-offset_bottom = 84.0
+offset_left = -36.0
+offset_top = -8.0
+offset_right = 40.0
+offset_bottom = 25.0
 
 [node name="Label2" type="Label" parent="quit"]
 layout_mode = 0
