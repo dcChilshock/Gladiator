@@ -1,19 +1,20 @@
-[gd_scene load_steps=11 format=3 uid="uid://ccx72ahpjn5pn"]
+[gd_scene load_steps=7 format=3 uid="uid://updhsdc030a3"]
 
-[ext_resource type="Script" path="res://startscreen.gd" id="1_p5poi"]
-[ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="2_o3dom"]
-[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="3_lfj7h"]
-[ext_resource type="Texture2D" uid="uid://bec51xvckoby1" path="res://INTERFACE/STARTSCREEN.png" id="5_irwck"]
-[ext_resource type="Texture2D" uid="uid://72hm1fuda0cc" path="res://MUST ADDS/QUACK/idleAnimation.png" id="6_t8sng"]
-[ext_resource type="Texture2D" uid="uid://bcdmi1g4cuyi7" path="res://CHARACTERS/WhiteCat.png" id="7_cyrn5"]
-[ext_resource type="Texture2D" uid="uid://cjpjuv17jmmuk" path="res://INTERFACE/Startimage.png" id="8_jsvmv"]
-[ext_resource type="Texture2D" uid="uid://dnnjgqyg6pmpl" path="res://MUST ADDS/TERMINOTAUR/Terminotaur Sprite Sheet.png" id="8_m6d5n"]
+[ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="1_tpu42"]
+[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="2_scif7"]
+[ext_resource type="PackedScene" uid="uid://374uyqo5ly1f" path="res://test_enemy.tscn" id="4_f4f1h"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j6wpv"]
-texture = ExtResource("3_lfj7h")
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_5odyu"]
+vertices = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)])
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ul7iq"]
+texture = ExtResource("2_scif7")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
@@ -50,6 +51,7 @@ texture = ExtResource("3_lfj7h")
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_5odyu")
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
@@ -134,7 +136,6 @@ texture = ExtResource("3_lfj7h")
 2:4/0 = 0
 2:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:4/0/physics_layer_0/angular_velocity = 0.0
-2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:4/0 = 0
 3:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:4/0/physics_layer_0/angular_velocity = 0.0
@@ -364,67 +365,23 @@ texture = ExtResource("3_lfj7h")
 10:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:9/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_eargt"]
+[sub_resource type="TileSet" id="TileSet_nctfx"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_j6wpv")
+navigation_layer_0/layers = 1
+sources/0 = SubResource("TileSetAtlasSource_ul7iq")
 
-[node name="Startscreen" type="Node2D"]
-script = ExtResource("1_p5poi")
-
-[node name="knight_ch" parent="." instance=ExtResource("2_o3dom")]
-position = Vector2(192, 197)
+[node name="pathfindingtest" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource("TileSet_eargt")
+tile_set = SubResource("TileSet_nctfx")
 format = 2
-layer_0/tile_data = PackedInt32Array(655372, 131072, 4, 655371, 131072, 4, 720906, 131072, 4, 786442, 131072, 4, 851978, 131072, 4, 917515, 131072, 4, 917516, 131072, 4, 851981, 131072, 4, 786445, 131072, 4, 720909, 131072, 4)
+layer_0/tile_data = PackedInt32Array(458769, 0, 0, 458770, 0, 0, 458771, 0, 0, 458772, 0, 0, 458773, 0, 0, 458774, 0, 0, 458775, 0, 0, 458776, 0, 0, 458777, 0, 0, 458778, 0, 0, 458779, 0, 0, 458780, 0, 0, 458781, 0, 0, 458782, 0, 0, 524318, 0, 0, 589854, 0, 0, 655390, 0, 0, 720926, 0, 0, 786462, 0, 0, 851998, 0, 0, 589851, 0, 0, 589852, 0, 0, 720924, 0, 0, 851985, 0, 0, 851986, 0, 0, 851987, 0, 0, 851988, 0, 0, 851989, 0, 0, 851990, 0, 0, 851991, 0, 0, 851992, 0, 0, 851993, 0, 0, 851994, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 0, 0, 589848, 0, 0, 655384, 0, 0, 655385, 0, 0, 720921, 0, 0, 655383, 0, 0, 655380, 0, 0, 720916, 0, 0, 655379, 0, 0, 589843, 0, 0, 524305, 0, 0, 589841, 0, 0, 655377, 0, 0, 720913, 0, 0, 786449, 0, 0, 524306, 131072, 1, 589842, 131072, 1, 655378, 131072, 1, 720914, 131072, 1, 786450, 131072, 1, 720915, 131072, 1, 786451, 131072, 1, 786452, 131072, 1, 786453, 131072, 1, 786454, 131072, 1, 786455, 131072, 1, 786456, 131072, 1, 786457, 131072, 1, 786458, 131072, 1, 786459, 131072, 1, 786460, 131072, 1, 786461, 131072, 1, 524317, 131072, 1, 589853, 131072, 1, 655389, 131072, 1, 720925, 131072, 1, 524307, 131072, 1, 524308, 131072, 1, 524309, 131072, 1, 524310, 131072, 1, 524311, 131072, 1, 524312, 131072, 1, 524313, 131072, 1, 524314, 131072, 1, 524315, 131072, 1, 524316, 131072, 1, 589844, 131072, 1, 589845, 131072, 1, 589846, 131072, 1, 589847, 131072, 1, 655381, 131072, 1, 720917, 131072, 1, 655382, 131072, 1, 720918, 131072, 1, 720919, 131072, 1, 720920, 131072, 1, 589849, 131072, 1, 589850, 131072, 1, 655386, 131072, 1, 720922, 131072, 1, 655387, 131072, 1, 720923, 131072, 1, 655388, 131072, 1)
 
-[node name="IdleAnimation" type="Sprite2D" parent="."]
-position = Vector2(190, 244)
-texture = ExtResource("6_t8sng")
-hframes = 4
-vframes = 4
+[node name="test_enemy" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_f4f1h")]
+position = Vector2(384, 196)
+player = NodePath("../knight_ch")
 
-[node name="WhiteCat" type="Sprite2D" parent="."]
-position = Vector2(249, 279)
-texture = ExtResource("7_cyrn5")
-hframes = 4
-vframes = 4
+[node name="knight_ch" parent="." instance=ExtResource("1_tpu42")]
+position = Vector2(356, 147)
 
-[node name="TerminotaurSpriteSheet" type="Sprite2D" parent="."]
-position = Vector2(136, 261)
-texture = ExtResource("8_m6d5n")
-hframes = 5
-frame = 1
-
-[node name="Startscreen2" type="Sprite2D" parent="."]
-position = Vector2(192, 208)
-texture = ExtResource("5_irwck")
-
-[node name="Exit" type="Button" parent="Startscreen2"]
-offset_left = -36.0
-offset_top = -21.0
-offset_right = 22.0
-offset_bottom = 10.0
-text = "exit"
-
-[node name="settings" type="Button" parent="Startscreen2"]
-offset_left = -42.0
-offset_top = 12.0
-offset_right = 28.0
-offset_bottom = 43.0
-text = "settings"
-
-[node name="Start" type="Button" parent="."]
-offset_left = 144.0
-offset_top = 157.0
-offset_right = 231.0
-offset_bottom = 180.0
-
-[node name="Startimage" type="Sprite2D" parent="Start"]
-position = Vector2(56, 26)
-texture = ExtResource("8_jsvmv")
-
-[connection signal="pressed" from="Startscreen2/Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Startscreen2/settings" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[editable path="knight_ch"]

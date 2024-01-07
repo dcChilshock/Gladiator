@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqoy2sneplgwj"
-path="res://.godot/imported/GALVsister-walk%(6).png-7d921454ca1c0d3161e9e4a6c754ce00.ctex"
+path="res://.godot/imported/GALVsister-walk%(6).png-554663cf36432e73d050ed547c5bc78e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVsister-walk%(6).png"
-dest_files=["res://.godot/imported/GALVsister-walk%(6).png-7d921454ca1c0d3161e9e4a6c754ce00.ctex"]
+source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/GALVsister-walk%(6).png"
+dest_files=["res://.godot/imported/GALVsister-walk%(6).png-554663cf36432e73d050ed547c5bc78e.ctex"]
 
 [params]
 

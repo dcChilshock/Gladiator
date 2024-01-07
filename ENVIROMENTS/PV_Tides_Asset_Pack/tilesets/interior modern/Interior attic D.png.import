@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1tevi4nqsqgj"
-path="res://.godot/imported/Interior attic D.png-49100f9091c47bfe62675c2c06c923b7.ctex"
+path="res://.godot/imported/Interior attic D.png-96df448baaee3c194006735483481b32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/tilesets/interior modern/Interior attic D.png"
-dest_files=["res://.godot/imported/Interior attic D.png-49100f9091c47bfe62675c2c06c923b7.ctex"]
+source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/tilesets/interior modern/Interior attic D.png"
+dest_files=["res://.godot/imported/Interior attic D.png-96df448baaee3c194006735483481b32.ctex"]
 
 [params]
 

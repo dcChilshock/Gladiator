@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv17dve5d0tkw"]
+
+[ext_resource type="Script" path="res://test_pathch.gd" id="1_765ol"]
+[ext_resource type="Texture2D" uid="uid://c5t725l75wchp" path="res://icon.svg" id="2_molsi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b3rop"]
+radius = 6.08276
+
+[node name="test_pathch" type="CharacterBody2D"]
+script = ExtResource("1_765ol")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_molsi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b3rop")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

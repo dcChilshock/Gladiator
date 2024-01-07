@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsehud4a1eu27"
-path="res://.godot/imported/interior-tiles-ground set.png-379019184dc4f97a0ea3d880332784ea.ctex"
+path="res://.godot/imported/interior-tiles-ground set.png-cfffbbd2157b3c96843a338800b24bf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/tiles/interior-tiles-ground set.png"
-dest_files=["res://.godot/imported/interior-tiles-ground set.png-379019184dc4f97a0ea3d880332784ea.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/tiles/interior-tiles-ground set.png"
+dest_files=["res://.godot/imported/interior-tiles-ground set.png-cfffbbd2157b3c96843a338800b24bf1.ctex"]
 
 [params]
 

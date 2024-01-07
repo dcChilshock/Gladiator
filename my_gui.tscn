@@ -29,19 +29,19 @@ anchor_left = 0.498
 anchor_top = 0.484
 anchor_right = 0.498
 anchor_bottom = 0.484
-offset_left = -258.696
-offset_top = -133.728
-offset_right = 258.304
-offset_bottom = 139.272
+offset_left = -254.696
+offset_top = -137.728
+offset_right = 262.304
+offset_bottom = 135.272
 
-[node name="resume" type="Button" parent="Panel/Vboxthing"]
+[node name="resume" type="Button" parent="."]
 layout_mode = 0
-offset_left = 206.0
-offset_top = 75.0
-offset_right = 282.0
-offset_bottom = 108.0
+offset_left = -40.0
+offset_top = 3.0
+offset_right = 36.0
+offset_bottom = 35.0
 
-[node name="Label" type="Label" parent="Panel/Vboxthing/resume"]
+[node name="Label" type="Label" parent="resume"]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 6.0
@@ -50,14 +50,14 @@ offset_bottom = 34.0
 text = "CONTINUE"
 label_settings = SubResource("LabelSettings_rnwgu")
 
-[node name="quit" type="Button" parent="Panel/Vboxthing"]
+[node name="quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 210.0
-offset_top = 142.0
-offset_right = 286.0
-offset_bottom = 175.0
+offset_left = -38.0
+offset_top = 51.0
+offset_right = 38.0
+offset_bottom = 84.0
 
-[node name="Label2" type="Label" parent="Panel/Vboxthing/quit"]
+[node name="Label2" type="Label" parent="quit"]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 2.0
@@ -66,5 +66,5 @@ offset_bottom = 30.0
 text = "QUIT"
 label_settings = SubResource("LabelSettings_rnwgu")
 
-[connection signal="pressed" from="Panel/Vboxthing/resume" to="." method="_on_resume_pressed"]
-[connection signal="pressed" from="Panel/Vboxthing/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

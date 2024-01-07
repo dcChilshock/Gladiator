@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsqt7n6txcg6q"
-path="res://.godot/imported/x-mas-ground.png-b4bebb5da8f40b7fe892741bca4ff3cf.ctex"
+path="res://.godot/imported/x-mas-ground.png-d2c7268a2a31509b729a7845a8d47539.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/tiles/x-mas-ground.png"
-dest_files=["res://.godot/imported/x-mas-ground.png-b4bebb5da8f40b7fe892741bca4ff3cf.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/tiles/x-mas-ground.png"
+dest_files=["res://.godot/imported/x-mas-ground.png-d2c7268a2a31509b729a7845a8d47539.ctex"]
 
 [params]
 

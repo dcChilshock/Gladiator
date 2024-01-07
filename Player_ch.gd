@@ -79,7 +79,7 @@ func pickup_health(value):
 	data.health = clamp(data.health, 0, data.max_health)
 
 func _ready():
-	p_HUD.show()
+	#p_HUD.show()
 	menu_instance = menu_scene.instantiate() 
 	get_tree().get_root().add_child.call_deferred(menu_instance)
 	menu_instance.hide()
@@ -128,8 +128,9 @@ func _physics_process(delta):
 			velocity = velocity.move_toward(Vector2(), SPEED)
 		
 		velocity += inertia
-		move_and_slide()
+		
 		inertia = inertia.move_toward(Vector2(), delta * 1000.0)
+		move_and_slide()
 	
 	#if data.state != STATES.DEAD:
 		#if Input.is_action_just_pressed("ui_accept"):

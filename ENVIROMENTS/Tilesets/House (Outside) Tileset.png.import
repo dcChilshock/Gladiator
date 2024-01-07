@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byrasl0rnwd2j"
-path="res://.godot/imported/House (Outside) Tileset.png-8bc0a54f5de54e94657b629bf74c4503.ctex"
+path="res://.godot/imported/House (Outside) Tileset.png-2877c211c2778754fbd11540f9ee0bed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Tilesets/House (Outside) Tileset.png"
-dest_files=["res://.godot/imported/House (Outside) Tileset.png-8bc0a54f5de54e94657b629bf74c4503.ctex"]
+source_file="res://ENVIROMENTS/Tilesets/House (Outside) Tileset.png"
+dest_files=["res://.godot/imported/House (Outside) Tileset.png-2877c211c2778754fbd11540f9ee0bed.ctex"]
 
 [params]
 
