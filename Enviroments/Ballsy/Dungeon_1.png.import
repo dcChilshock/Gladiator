@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs0k10g7gj4lp"
-path="res://.godot/imported/Dungeon_1.png-4d70b992cf15936f320c4e0e330729d5.ctex"
+path="res://.godot/imported/Dungeon_1.png-258a52a34876db91e4bc2fca74b10432.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Ballsy/Dungeon_1.png"
-dest_files=["res://.godot/imported/Dungeon_1.png-4d70b992cf15936f320c4e0e330729d5.ctex"]
+source_file="res://Enviroments/Ballsy/Dungeon_1.png"
+dest_files=["res://.godot/imported/Dungeon_1.png-258a52a34876db91e4bc2fca74b10432.ctex"]
 
 [params]
 

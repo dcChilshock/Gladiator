@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dayugwo13p8po"
-path="res://.godot/imported/GALVwellen4%(10).png-0d46068fb1b4c52209a71859285d612d.ctex"
+path="res://.godot/imported/GALVwellen4%(10).png-3c34c046e2131edd2c6a480b28742fb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/GALVwellen4%(10).png"
-dest_files=["res://.godot/imported/GALVwellen4%(10).png-0d46068fb1b4c52209a71859285d612d.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVwellen4%(10).png"
+dest_files=["res://.godot/imported/GALVwellen4%(10).png-3c34c046e2131edd2c6a480b28742fb7.ctex"]
 
 [params]
 

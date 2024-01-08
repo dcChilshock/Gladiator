@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp808ttw3xyyi"
-path="res://.godot/imported/GALVmöve-mit key%(8).png-dd486a5c85d57e289c6f05435383a991.ctex"
+path="res://.godot/imported/GALVmöve-mit key%(8).png-647f122a9e4a59db073b471a592a48ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/GALVmöve-mit key%(8).png"
-dest_files=["res://.godot/imported/GALVmöve-mit key%(8).png-dd486a5c85d57e289c6f05435383a991.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVmöve-mit key%(8).png"
+dest_files=["res://.godot/imported/GALVmöve-mit key%(8).png-647f122a9e4a59db073b471a592a48ec.ctex"]
 
 [params]
 

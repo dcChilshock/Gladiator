@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cudk1t8eciy6l"
-path="res://.godot/imported/GALVkid-hop%(6).png-dc5e5b049a3a59cf031a8b713def3585.ctex"
+path="res://.godot/imported/GALVkid-hop%(6).png-aec068a7c6ef3310186c701697fc69e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/charsets/GALVkid-hop%(6).png"
-dest_files=["res://.godot/imported/GALVkid-hop%(6).png-dc5e5b049a3a59cf031a8b713def3585.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/charsets/GALVkid-hop%(6).png"
+dest_files=["res://.godot/imported/GALVkid-hop%(6).png-aec068a7c6ef3310186c701697fc69e8.ctex"]
 
 [params]
 

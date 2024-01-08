@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://dodag2u2f3h7u"]
+
+[ext_resource type="Script" path="res://Blue_slime.gd" id="1_vuy34"]
+[ext_resource type="Texture2D" uid="uid://dp0dl72qgbtui" path="res://ENEMY/Slimes/Slime blue.png" id="2_fls5f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ba02i"]
+radius = 8.06226
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cf3r5"]
+atlas = ExtResource("2_fls5f")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qxpf"]
+atlas = ExtResource("2_fls5f")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0wjp"]
+atlas = ExtResource("2_fls5f")
+region = Rect2(96, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvmml"]
+atlas = ExtResource("2_fls5f")
+region = Rect2(144, 48, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c2mgb"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"move_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cf3r5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qxpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0wjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvmml")
+}],
+"loop": true,
+"name": &"move_side",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"move_up",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Blue_slime" type="CharacterBody2D"]
+script = ExtResource("1_vuy34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ba02i")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="." groups=["Enemy"]]
+wait_time = 0.1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_c2mgb")
+animation = &"move_side"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

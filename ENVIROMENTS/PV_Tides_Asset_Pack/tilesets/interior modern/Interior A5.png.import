@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlbo31fivkbt5"
-path="res://.godot/imported/Interior A5.png-ef316712e06077fe1f00f1c9558764f5.ctex"
+path="res://.godot/imported/Interior A5.png-0f28340de76328898a8896efc39f1524.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/tilesets/interior modern/Interior A5.png"
-dest_files=["res://.godot/imported/Interior A5.png-ef316712e06077fe1f00f1c9558764f5.ctex"]
+source_file="res://Enviroments/PV_Tides_Asset_Pack/tilesets/interior modern/Interior A5.png"
+dest_files=["res://.godot/imported/Interior A5.png-0f28340de76328898a8896efc39f1524.ctex"]
 
 [params]
 

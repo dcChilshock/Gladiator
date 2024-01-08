@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://updhsdc030a3"]
+[gd_scene load_steps=8 format=3 uid="uid://updhsdc030a3"]
 
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="1_tpu42"]
-[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="2_scif7"]
+[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://Enviroments/cave.png" id="2_scif7"]
+[ext_resource type="PackedScene" uid="uid://dodag2u2f3h7u" path="res://blue_slime.tscn" id="4_bbvil"]
 [ext_resource type="PackedScene" uid="uid://374uyqo5ly1f" path="res://test_enemy.tscn" id="4_f4f1h"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5odyu"]
@@ -383,5 +384,9 @@ player = NodePath("../knight_ch")
 
 [node name="knight_ch" parent="." instance=ExtResource("1_tpu42")]
 position = Vector2(356, 147)
+
+[node name="Blue_slime" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_bbvil")]
+position = Vector2(488, 176)
+player = NodePath("../knight_ch")
 
 [editable path="knight_ch"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv6y1fqsiqflu"
-path="res://.godot/imported/outside-test A5-seasons.png-3ef589a86cf9aabb764f6c40f633c302.ctex"
+path="res://.godot/imported/outside-test A5-seasons.png-423f05266c4b3f088ebe23417061ba69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/tiles/outside-test A5-seasons.png"
-dest_files=["res://.godot/imported/outside-test A5-seasons.png-3ef589a86cf9aabb764f6c40f633c302.ctex"]
+source_file="res://Enviroments/Purple Valley/tiles/outside-test A5-seasons.png"
+dest_files=["res://.godot/imported/outside-test A5-seasons.png-423f05266c4b3f088ebe23417061ba69.ctex"]
 
 [params]
 

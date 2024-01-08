@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmnta8q34yinm"
-path="res://.godot/imported/interior-tiles-furniture-school.png-a0593897e261bf0b5fabbaeec5919af1.ctex"
+path="res://.godot/imported/interior-tiles-furniture-school.png-9bd3b256710f841cd20e8be4f8082521.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ENVIROMENTS/Purple Valley/tiles/interior-tiles-furniture-school.png"
-dest_files=["res://.godot/imported/interior-tiles-furniture-school.png-a0593897e261bf0b5fabbaeec5919af1.ctex"]
+source_file="res://Enviroments/Purple Valley/tiles/interior-tiles-furniture-school.png"
+dest_files=["res://.godot/imported/interior-tiles-furniture-school.png-9bd3b256710f841cd20e8be4f8082521.ctex"]
 
 [params]
 
