@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://skwy5y0tg2qs"
-path="res://.godot/imported/beach flora C.png-8eca23d6ad877f3d4b3078617bd62bfd.ctex"
+path="res://.godot/imported/beach flora C.png-896a9d217f5116616a2d131b8b610281.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/tilesets/beach/beach flora C.png"
-dest_files=["res://.godot/imported/beach flora C.png-8eca23d6ad877f3d4b3078617bd62bfd.ctex"]
+source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/tilesets/beach/beach flora C.png"
+dest_files=["res://.godot/imported/beach flora C.png-896a9d217f5116616a2d131b8b610281.ctex"]
 
 [params]
 
