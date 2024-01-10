@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://updhsdc030a3"]
 
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="1_tpu42"]
-[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="2_scif7"]
+[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://Enviroments/cave.png" id="2_scif7"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_5odyu"]
 vertices = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)

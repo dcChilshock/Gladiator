@@ -73,4 +73,13 @@ debug_color = Color(0, 0.631373, 0.458824, 0.419608)
 [node name="Timer" type="Timer" parent="." groups=["Enemy"]]
 wait_time = 0.1
 
+[node name="raycastM" type="RayCast2D" parent="."]
+target_position = Vector2(-96, 0)
+
+[node name="raycastN" type="RayCast2D" parent="."]
+target_position = Vector2(-80, -40)
+
+[node name="raycastS" type="RayCast2D" parent="."]
+target_position = Vector2(-80, 40)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
