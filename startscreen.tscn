@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://startscreen.gd" id="1_p5poi"]
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="2_o3dom"]
-[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://Enviroments/cave.png" id="3_lfj7h"]
+[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="3_lfj7h"]
 [ext_resource type="Texture2D" uid="uid://bec51xvckoby1" path="res://INTERFACE/STARTSCREEN.png" id="5_irwck"]
 [ext_resource type="Texture2D" uid="uid://72hm1fuda0cc" path="res://MUST ADDS/QUACK/idleAnimation.png" id="6_t8sng"]
 [ext_resource type="Texture2D" uid="uid://bcdmi1g4cuyi7" path="res://CHARACTERS/WhiteCat.png" id="7_cyrn5"]
