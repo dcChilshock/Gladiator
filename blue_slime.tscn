@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dodag2u2f3h7u"]
+[gd_scene load_steps=11 format=3 uid="uid://dodag2u2f3h7u"]
 
 [ext_resource type="Script" path="res://Blue_slime.gd" id="1_vuy34"]
 [ext_resource type="Texture2D" uid="uid://dp0dl72qgbtui" path="res://ENEMY/Slimes/Slime blue.png" id="2_fls5f"]
@@ -60,7 +60,10 @@ radius = 8.06226
 [sub_resource type="CircleShape2D" id="CircleShape2D_6b2qq"]
 radius = 64.0
 
-[node name="Blue_slime" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_0wjod"]
+radius = 13.0384
+
+[node name="Blue_slime" type="CharacterBody2D" groups=["enemy"]]
 motion_mode = 1
 wall_min_slide_angle = 0.0
 script = ExtResource("1_vuy34")
@@ -84,6 +87,14 @@ autostart = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chaserange"]
 shape = SubResource("CircleShape2D_6b2qq")
+
+[node name="attack_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack_hitbox"]
+shape = SubResource("CircleShape2D_0wjod")
+debug_color = Color(0.596078, 0.0352941, 0.294118, 0.419608)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="chaserange" to="." method="_on_chaserange_body_entered"]

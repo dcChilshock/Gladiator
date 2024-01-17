@@ -21,15 +21,15 @@ var attack_direction = Vector2.DOWN
 var animation_lock = 0.0  # Lock player while playing attack animation
 var damage_lock = 0.0
 
-
-#var slash_scene = preload("res://entities/attacks/slash.tscn")
+var slash_scene = preload("res://slash.tscn")
 var menu_scene = preload("res://my_gui.tscn")
-#var attack_sound = preload("res://assets/sounds/slash.wav")
-#var damage_shader = preload("res://assets/shaders/take_damage.tres")
+var attack_sound = preload("res://Sound/slash.wav")
+var damage_shader = preload("res://Effects/Take_damage.tres")
+var slashsound = preload("res://Sound/slash.wav")
 var menu_instance = null
 
 @onready var p_HUD = get_tree().get_first_node_in_group("HUD")
-#@onready var aud_player = $AudioStreamPlayer2D
+@onready var aud_player = $AudioStreamPlayer2D
 # Add and preload sounds for attack, death, hurt, coin, miniheart, charge_attack
 # aud_player.stream = whatever_sound
 # aud_player.play()
@@ -39,36 +39,17 @@ func get_direction_name():
 		int(round(look_direction.angle() * 2 / PI)) % 4
 	]
 
-#func attack():
-	#data.state = STATES.ATTACKING
-	#if get_direction_name() == "left":
-		#$AnimatedSprite2D.flip_h = 0
-	#$AnimatedSprite2D.play("swipe_" + get_direction_name())
-	#attack_direction = look_direction
-	#var slash = slash_scene.instantiate()
-	#slash.position = attack_direction * 20.0
-	#slash.rotation = Vector2().angle_to_point(-attack_direction)
-	#add_child(slash)
-	#aud_player.stream = attack_sound
-	#aud_player.play()
-	#animation_lock = 0.2
-
-	#for i in range(9):
-		# Offset by (i-4) * 45 degrees
-		#var angle = -attack_direction.angle() + (i-4) * PI / 4;  # [-4,4]
-		#var dir = Vector2(cos(angle), sin(angle))
-		#var slash = slash_scene.instantiate()
-		#slash.position = dir * 20.0
-		#slash.rotation = Vector2().angle_to_point(-dir)
-		#slash.damage *= 1.5
-		#add_child(slash)
-		#await get_tree().create_timer(0.03).timeout
-	
-	#animation_lock = 0.2
-	#await $AnimatedSprite2D.animation_finished
-	#data.state = STATES.IDLE
-	#pass
-
+func slash_attack():
+	data.state = STATES.ATTACKING
+	$AnimatedSprite2D.play("swipe_" + get_direction_name())
+	attack_direction = look_direction
+	var slash = slash_scene.instantiate()
+	slash.position = attack_direction * 20.0
+	slash.rotation = Vector2().angle_to_point(-attack_direction)
+	add_child(slash)
+	aud_player.stream = slashsound
+	aud_player.play
+	animation_lock = 0.2
 
 
 func pickup_money(value):
@@ -79,7 +60,7 @@ func pickup_health(value):
 	data.health = clamp(data.health, 0, data.max_health)
 
 func _ready():
-	#p_HUD.show()
+	p_HUD.show()
 	menu_instance = menu_scene.instantiate() 
 	get_tree().get_root().add_child.call_deferred(menu_instance)
 	menu_instance.hide()
@@ -87,23 +68,24 @@ func _ready():
 
 signal health_depleted
 
-#func take_damage(dmg):
-	#if damage_lock == 0.0:
-		#data.health -= dmg
-		#data.state = STATES.DAMAGED
-		#damage_lock = 0.5
-		#animation_lock = dmg * 0.005
+func take_damage(dmg):
+	print("lsaghfpoursg")
+	if damage_lock == 0.0:
+		data.health -= dmg
+		data.state = STATES.DAMAGED
+		damage_lock = 0.5
+		animation_lock = dmg * 0.005
 		# TODO: damage shader
-		#$AnimatedSprite2D.material = damage_shader.duplicate()
-		#$AnimatedSprite2D.material.set_shader_parameter("intensity", 0.5)
-		#if data.health <= 0:
-			#data.state = STATES.DEAD
+		$AnimatedSprite2D.material = damage_shader.duplicate()
+		$AnimatedSprite2D.material.set_shader_parameter("intensity", 0.5)
+		if data.health <= 0:
+			data.state = STATES.DEAD
 			# TODO: play death animation & sound
-			#await get_tree().create_timer(0.5).timeout
-			#health_depleted.emit()
+			await get_tree().create_timer(0.5).timeout
+			health_depleted.emit()
 		#else:
 			# TODO: play damage sound
-	#pass
+	pass
 
 
 
@@ -131,12 +113,6 @@ func _physics_process(delta):
 		
 		inertia = inertia.move_toward(Vector2(), delta * 1000.0)
 		move_and_slide()
-	
-	#if data.state != STATES.DEAD:
-		#if Input.is_action_just_pressed("ui_accept"):
-			#attack()
-			#charge_start_time = Time.get_time_dict_from_system().second
-			#data.state = STATES.CHARGING
 		
 	if Input.is_action_just_pressed("ui_cancel"):
 		menu_instance.global_position = self.global_position

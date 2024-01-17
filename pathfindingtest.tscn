@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://updhsdc030a3"]
+[gd_scene load_steps=11 format=3 uid="uid://updhsdc030a3"]
 
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="1_tpu42"]
 [ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://Enviroments/cave.png" id="2_scif7"]
 [ext_resource type="PackedScene" uid="uid://dodag2u2f3h7u" path="res://blue_slime.tscn" id="3_vupdd"]
+[ext_resource type="PackedScene" uid="uid://b0qlbngsvb0ed" path="res://hud_classic.tscn" id="4_082iy"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0a3xs"]
 
@@ -397,5 +398,7 @@ position = Vector2(356, 147)
 [node name="Blue_slime" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_vupdd")]
 position = Vector2(512, 176)
 player = NodePath("../knight_ch")
+
+[node name="HUD_classic" parent="." instance=ExtResource("4_082iy")]
 
 [editable path="knight_ch"]

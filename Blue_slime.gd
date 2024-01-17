@@ -6,9 +6,6 @@ var MAX_HEALTH: float = 30.0
 var  HEALTH = MAX_HEALTH
 var DAMAGE = 10.0
 var AI_STATE = STATES.IDLE
-
-
-
 				# 0  1 up   2down 3left 4right 5         6        7        8         9
 enum STATES { IDLE=0, UP, DOWN, LEFT, RIGHT, UPLEFT, UPRIGHT, DOWNLEFT, DOWNRIGHT, DAMAGED, CHASE}
 
@@ -52,34 +49,16 @@ var money_value = 5.0
 
 signal recovered
 
-
-
 @export var player: Node2D
-
 @onready var raycastM = "$raycastM"
 @onready var raycastN = "$raycastN"
 @onready var raycastS = "$raycastS"
 @onready var anim_player = $AnimatedSprite2D
 @onready var nav_agent := $NavigationAgent2D as NavigationAgent2D
-
-#func vec2_offset():
-	#return Vector2(randf_range(-10.0, 10.0), randf_range(-10.0, 10.0))
-#dont know if this will be neccesary 
-
-#func turn_toward_player_location(location: Vector2):
-	
-	#var dir_to_player = (location - global_position).normalized()
-	#velocity = dir_to_player * (speed)
-	#var closest_angle = INF 
-	#var closest_state = STATES.IDLE
-	#for i in range(1, 5):
-		#var state_dir = state_directions[i]
-		#var angle_diff = abs(state_dir.angle_to(dir_to_player))
-		#if angle_diff < closest_angle:
-			#closest_angle = angle_diff
-			#closest_state = STATES.values()[i]
-	#AI_STATE = closest_state
-#turning could be usefull
+@onready var damage_shader = "res://Effects/Take_damage.tres"
+@onready var aud_player = $AudioStreamPlayer2D
+@onready var death_sound = "res://Sound/OnlineSound.net SFX hitHurt.wav"
+@onready var hit_
 
 func _physics_process(delta):
 	animation_lock = max(animation_lock-delta, 0.0)
@@ -88,16 +67,16 @@ func _physics_process(delta):
 		var dir = to_local(nav_agent.get_next_path_position()).normalized()
 		velocity = dir * speed
 		move_and_slide()
-	#if animation_lock == 0.0:
-		#if AI_STATE == STATES.DAMAGED:
-			#$AnimatedSprite2D.material = null
-			#AI_STATE = STATES.IDLE
-			#recovered.emit()
-		#for player in get_tree().get_nodes_in_group("player"):
-			#if $attack_hitbox.overlaps_body(player):\
-				#if player.damage_lock == 0.0:
-					#player.inertia = (player.global_position - global_position).normalized()*knockback
-					#player.take_damage(DAMAGE)
+	if animation_lock == 0.0:
+		if AI_STATE == STATES.DAMAGED:
+			$AnimatedSprite2D.material = null
+			AI_STATE = STATES.IDLE
+			recovered.emit()
+		for player in get_tree().get_nodes_in_group("player"):
+			if $attack_hitbox.overlaps_body(player):\
+				if player.damage_lock == 0.0:
+					player.inertia = (player.global_position - global_position).normalized()*knockback
+					player.take_damage(DAMAGE)
 	#var animation = state_animations[int(AI_STATE)]
 	#if animation and not anim_player.is_playing():
 		#anim_player.play(animation)
@@ -113,3 +92,26 @@ func _on_timer_timeout():
 func _on_chaserange_body_entered(body):
 	if body.is_in_group("player"):
 		AI_STATE = STATES.CHASE
+
+func take_damage(dmg, attacker=null):
+	if damage_lock == 0.0:
+		AI_STATE = STATES.DAMAGED
+		HEALTH -= dmg
+		damage_lock =0.2
+		animation_lock = 0.2
+		#damage intensity plus shader
+		var dmg_intensity = clamp(1.0-((HEALTH+0.01)/MAX_HEALTH), 0.1, 0.8)
+		$AnimatedSprite2D.material = damage_shader.duplicate()
+		$AnimatedSprite2D.material.set_shader_parameter("intensity", dmg_intensity)
+		
+		if HEALTH <= 0:
+			aud_player.stream = death_sound 
+			aud_player.play() 
+			await aud_player.finished 
+			queue_free()
+		else:
+			if attacker != null:
+				var location = attacker.global_position
+				await recovered
+				AI_STATE = STATES.CHASE
+	pass
