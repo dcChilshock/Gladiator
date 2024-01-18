@@ -1,9 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://updhsdc030a3"]
 
 [ext_resource type="PackedScene" uid="uid://bk3q3orymq4pf" path="res://player_ch.tscn" id="1_tpu42"]
-[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://Enviroments/cave.png" id="2_scif7"]
+[ext_resource type="Texture2D" uid="uid://cmsaef0q8tmhe" path="res://ENVIROMENTS/cave.png" id="2_scif7"]
 [ext_resource type="PackedScene" uid="uid://dodag2u2f3h7u" path="res://blue_slime.tscn" id="3_vupdd"]
-[ext_resource type="PackedScene" uid="uid://b0qlbngsvb0ed" path="res://hud_classic.tscn" id="4_082iy"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0a3xs"]
 
@@ -385,6 +384,9 @@ physics_layer_0/collision_layer = 1
 navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_ul7iq")
 
+[sub_resource type="LabelSettings" id="LabelSettings_i1kn4"]
+font_size = 9
+
 [node name="pathfindingtest" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -399,6 +401,31 @@ position = Vector2(356, 147)
 position = Vector2(512, 176)
 player = NodePath("../knight_ch")
 
-[node name="HUD_classic" parent="." instance=ExtResource("4_082iy")]
+[node name="Blue_slime2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_vupdd")]
+position = Vector2(372, 300)
+player = NodePath("../knight_ch")
+
+[node name="Blue_slime3" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_vupdd")]
+position = Vector2(578, 280)
+player = NodePath("../knight_ch")
+
+[node name="Blue_slime4" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_vupdd")]
+position = Vector2(756, 203)
+player = NodePath("../knight_ch")
+
+[node name="Blue_slime5" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_vupdd")]
+position = Vector2(812, 359)
+player = NodePath("../knight_ch")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 284.0
+offset_top = 97.0
+offset_right = 504.0
+offset_bottom = 129.0
+text = "go fight the blue slimes
+the hud isnt set up so you wont know your health. 
+Their is a total of 
+Five slimes"
+label_settings = SubResource("LabelSettings_i1kn4")
 
 [editable path="knight_ch"]

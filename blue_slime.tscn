@@ -77,7 +77,6 @@ shape = SubResource("CircleShape2D_ba02i")
 debug_color = Color(0, 0.631373, 0.458824, 0.419608)
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
-debug_enabled = true
 
 [node name="Timer" type="Timer" parent="." groups=["Enemy"]]
 wait_time = 0.591

@@ -47,27 +47,20 @@ func slash_attack():
 	slash.position = attack_direction * 20.0
 	slash.rotation = Vector2().angle_to_point(-attack_direction)
 	add_child(slash)
-	aud_player.stream = slashsound
-	aud_player.play
+	#aud_player.stream = slashsound
+	#aud_player.play
 	animation_lock = 0.2
-
-
 func pickup_money(value):
 	data.money += value
-
 func pickup_health(value):
 	data.health += value
 	data.health = clamp(data.health, 0, data.max_health)
-
 func _ready():
-	p_HUD.show()
+	#p_HUD.show()
 	menu_instance = menu_scene.instantiate() 
 	get_tree().get_root().add_child.call_deferred(menu_instance)
 	menu_instance.hide()
-
-
 signal health_depleted
-
 func take_damage(dmg):
 	print("lsaghfpoursg")
 	if damage_lock == 0.0:
@@ -76,19 +69,17 @@ func take_damage(dmg):
 		damage_lock = 0.5
 		animation_lock = dmg * 0.005
 		# TODO: damage shader
-		$AnimatedSprite2D.material = damage_shader.duplicate()
-		$AnimatedSprite2D.material.set_shader_parameter("intensity", 0.5)
+		#$AnimatedSprite2D.material = damage_shader.duplicate()
+		#$AnimatedSprite2D.material.set_shader_parameter("intensity", 0.5)
 		if data.health <= 0:
 			data.state = STATES.DEAD
 			# TODO: play death animation & sound
 			await get_tree().create_timer(0.5).timeout
 			health_depleted.emit()
+			
 		#else:
 			# TODO: play damage sound
 	pass
-
-
-
 func _physics_process(delta):
 	animation_lock = max(animation_lock-delta, 0.0)
 	damage_lock = max(damage_lock-delta, 0.0)
@@ -96,8 +87,6 @@ func _physics_process(delta):
 	if animation_lock == 0.0 and data.state != STATES.DEAD:
 		if data.state == STATES.DAMAGED and max(damage_lock-delta, 0.0):
 			$AnimatedSprite2D.material = null
-		
-		
 		var direction = Vector2(
 			Input.get_axis("ui_left", "ui_right"),
 			Input.get_axis("ui_up", "ui_down")
@@ -110,16 +99,16 @@ func _physics_process(delta):
 			velocity = velocity.move_toward(Vector2(), SPEED)
 		
 		velocity += inertia
-		
 		inertia = inertia.move_toward(Vector2(), delta * 1000.0)
 		move_and_slide()
 		
-	if Input.is_action_just_pressed("ui_cancel"):
-		menu_instance.global_position = self.global_position
-		menu_instance.show() 
-		get_tree().paused = true
-
-
+	if data.state != STATES.DEAD:
+		if Input.is_action_just_pressed("ui_accept"):
+			slash_attack()
+		if Input.is_action_just_pressed("ui_cancel"):
+			menu_instance.global_position = self.global_position
+			menu_instance.show() 
+			get_tree().paused = true
 func update_animation(direction):
 	if data.state == STATES.IDLE:
 		var a_name = "idle_down"  # Default
@@ -128,7 +117,7 @@ func update_animation(direction):
 			a_name = "walk_"
 			if direction.x != 0:
 				a_name += "side"
-				$AnimatedSprite2D.flip_h = direction.x < 0
+				$AnimatedSprite2D.flip_h = look_direction.x < 0
 			elif direction.y < 0:
 				a_name += "up"
 			elif direction.y > 0:

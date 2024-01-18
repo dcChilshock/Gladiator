@@ -1,11 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://c6uq3qntecm0p"]
 
 [ext_resource type="Script" path="res://my_gui.gd" id="1_3wlst"]
-[ext_resource type="FontFile" uid="uid://b0pyhjhlgr6hr" path="res://PotatoFont.ttf" id="2_joxcb"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_rnwgu"]
-font = ExtResource("2_joxcb")
-font_size = 31
+[ext_resource type="Texture2D" uid="uid://bfntt8agh62gi" path="res://INTERFACE/Quit_txt_file (2).png" id="2_btj6g"]
+[ext_resource type="Texture2D" uid="uid://dakvy7i7oj06e" path="res://INTERFACE/pixil-frame-0 (2).png" id="3_bo4ii"]
 
 [node name="my_gui" type="Control"]
 layout_mode = 3
@@ -16,55 +13,29 @@ offset_right = 642.0
 offset_bottom = 374.0
 script = ExtResource("1_3wlst")
 
-[node name="Panel" type="Panel" parent="."]
-layout_mode = 0
-offset_top = 11.0
-offset_right = 1152.0
-offset_bottom = 653.0
-
-[node name="Vboxthing" type="Panel" parent="Panel"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.498
-anchor_top = 0.484
-anchor_right = 0.498
-anchor_bottom = 0.484
-offset_left = -254.696
-offset_top = -137.728
-offset_right = 262.304
-offset_bottom = 135.272
-
 [node name="resume" type="Button" parent="."]
 layout_mode = 0
-offset_left = -37.0
-offset_top = -44.0
-offset_right = 39.0
-offset_bottom = -12.0
+offset_left = 519.0
+offset_top = 279.0
+offset_right = 613.0
+offset_bottom = 299.0
 
-[node name="Label" type="Label" parent="resume"]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 6.0
-offset_right = 76.0
-offset_bottom = 34.0
-text = "CONTINUE"
-label_settings = SubResource("LabelSettings_rnwgu")
+[node name="QuitTxtFile(2)" type="Sprite2D" parent="resume"]
+position = Vector2(54, 25)
+texture = ExtResource("2_btj6g")
 
 [node name="quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = -36.0
-offset_top = -8.0
-offset_right = 40.0
-offset_bottom = 25.0
+offset_left = 530.0
+offset_top = 310.0
+offset_right = 606.0
+offset_bottom = 341.0
+text = "quit"
 
-[node name="Label2" type="Label" parent="quit"]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 2.0
-offset_right = 54.0
-offset_bottom = 30.0
-text = "QUIT"
-label_settings = SubResource("LabelSettings_rnwgu")
+[node name="Pixil-frame-0(2)" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(570, 317)
+texture = ExtResource("3_bo4ii")
 
 [connection signal="pressed" from="resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

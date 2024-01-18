@@ -10,12 +10,9 @@ func _ready():
 func _process(delta):
 	pass
 
+@export var next_level ="pathfindingtest"
 
-func _on_start_pressed():
-	
-	#make character enter first or stored scene data
-	get_tree().change_scene_to_file("res://test_map.tscn")
-
-
-func _on_exit_pressed():
-	get_tree().quit()
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("player"):
+		var lvl = "res://" + next_level + ".tscn"
+		get_tree().change_scene_to_file(lvl)

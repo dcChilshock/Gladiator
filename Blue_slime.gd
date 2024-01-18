@@ -55,7 +55,7 @@ signal recovered
 @onready var raycastS = "$raycastS"
 @onready var anim_player = $AnimatedSprite2D
 @onready var nav_agent := $NavigationAgent2D as NavigationAgent2D
-@onready var damage_shader = "res://Effects/Take_damage.tres"
+@onready var damage_shader = "res://EFFECTS/Take_damage.tres"
 @onready var aud_player = $AudioStreamPlayer2D
 @onready var death_sound = "res://Sound/OnlineSound.net SFX hitHurt.wav"
 @onready var hit_
@@ -100,18 +100,17 @@ func take_damage(dmg, attacker=null):
 		damage_lock =0.2
 		animation_lock = 0.2
 		#damage intensity plus shader
-		var dmg_intensity = clamp(1.0-((HEALTH+0.01)/MAX_HEALTH), 0.1, 0.8)
-		$AnimatedSprite2D.material = damage_shader.duplicate()
-		$AnimatedSprite2D.material.set_shader_parameter("intensity", dmg_intensity)
+		#var dmg_intensity = clamp(1.0-((HEALTH+0.01)/MAX_HEALTH), 0.1, 0.8)
+		#$AnimatedSprite2D.material = damage_shader.duplicate()
+		#$AnimatedSprite2D.material.set_shader_parameter("intensity", dmg_intensity)
 		
 		if HEALTH <= 0:
-			aud_player.stream = death_sound 
-			aud_player.play() 
-			await aud_player.finished 
+			#aud_player.stream = death_sound 
+			#aud_player.play() 
+			#await aud_player.finished 
 			queue_free()
-		else:
-			if attacker != null:
-				var location = attacker.global_position
-				await recovered
-				AI_STATE = STATES.CHASE
+			
+		#else:
+			#if attacker != null:
+				#AI_STATE = STATES.CHASE
 	pass

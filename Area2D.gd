@@ -1,4 +1,4 @@
-extends Node2D
+extends Area2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -9,13 +9,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-
-func _on_start_pressed():
-	
-	#make character enter first or stored scene data
-	get_tree().change_scene_to_file("res://test_map.tscn")
-
-
-func _on_exit_pressed():
-	get_tree().quit()
