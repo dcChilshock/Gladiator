@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://HUD.gd" id="1_cpxkm"]
 [ext_resource type="FontFile" uid="uid://b0pyhjhlgr6hr" path="res://PotatoFont.ttf" id="2_42dlh"]
-[ext_resource type="Texture2D" uid="uid://dao4ph0106d6a" path="res://OBJECTS/objects.png" id="3_2qp16"]
+[ext_resource type="Texture2D" uid="uid://dao4ph0106d6a" path="res://Objects/objects.png" id="3_2qp16"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2tj51"]
 font = ExtResource("2_42dlh")
