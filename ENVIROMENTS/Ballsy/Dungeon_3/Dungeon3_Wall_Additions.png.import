@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckpqxs5ifaa7o"
-path="res://.godot/imported/Dungeon3_Wall_Additions.png-25b3004bfbea7c6de3b9c743ed392528.ctex"
+path="res://.godot/imported/Dungeon3_Wall_Additions.png-5474762a63f682a23e19365471ed3203.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Ballsy/Dungeon_3/Dungeon3_Wall_Additions.png"
-dest_files=["res://.godot/imported/Dungeon3_Wall_Additions.png-25b3004bfbea7c6de3b9c743ed392528.ctex"]
+source_file="res://ENVIROMENTS/Ballsy/Dungeon_3/Dungeon3_Wall_Additions.png"
+dest_files=["res://.godot/imported/Dungeon3_Wall_Additions.png-5474762a63f682a23e19365471ed3203.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c028dki2pqari"
-path="res://.godot/imported/Interior clutter C.png-a2d6e01e0958c588b1516b3cfca2deb1.ctex"
+path="res://.godot/imported/Interior clutter C.png-3fc49b3d4decd736883c1281d0f537b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/tilesets/interior modern/Interior clutter C.png"
-dest_files=["res://.godot/imported/Interior clutter C.png-a2d6e01e0958c588b1516b3cfca2deb1.ctex"]
+source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/tilesets/interior modern/Interior clutter C.png"
+dest_files=["res://.godot/imported/Interior clutter C.png-3fc49b3d4decd736883c1281d0f537b4.ctex"]
 
 [params]
 
