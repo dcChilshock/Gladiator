@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccg8b74d7bubs"
-path="res://.godot/imported/Vase.png-7d95d031ebab61b2865f4ab1512def98.ctex"
+path="res://.godot/imported/Vase.png-ccf3f44fa26d665e99d89c6e06cbadc1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Pixel Art Ancient Egypt/Vase.png"
-dest_files=["res://.godot/imported/Vase.png-7d95d031ebab61b2865f4ab1512def98.ctex"]
+source_file="res://ENVIROMENTS/Pixel Art Ancient Egypt/Vase.png"
+dest_files=["res://.godot/imported/Vase.png-ccf3f44fa26d665e99d89c6e06cbadc1.ctex"]
 
 [params]
 

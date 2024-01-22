@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuenhasp2jo88"
-path="res://.godot/imported/!$Fire and Water.png-c8aa05cde7e66413d60a08ac9afe8384.ctex"
+path="res://.godot/imported/!$Fire and Water.png-2dca8831b1adc55ad0cf41a58680f397.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Camp sizes/!$Fire and Water.png"
-dest_files=["res://.godot/imported/!$Fire and Water.png-c8aa05cde7e66413d60a08ac9afe8384.ctex"]
+source_file="res://ENVIROMENTS/Camp sizes/!$Fire and Water.png"
+dest_files=["res://.godot/imported/!$Fire and Water.png-2dca8831b1adc55ad0cf41a58680f397.ctex"]
 
 [params]
 

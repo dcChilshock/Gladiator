@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds5sh3qqh4hug"
-path="res://.godot/imported/icons.png-c539cafebba5a75e2eab5e9763996068.ctex"
+path="res://.godot/imported/icons.png-dd88cc5e82005736b7481f0f7953be75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/icons/icons.png"
-dest_files=["res://.godot/imported/icons.png-c539cafebba5a75e2eab5e9763996068.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/icons/icons.png"
+dest_files=["res://.godot/imported/icons.png-dd88cc5e82005736b7481f0f7953be75.ctex"]
 
 [params]
 

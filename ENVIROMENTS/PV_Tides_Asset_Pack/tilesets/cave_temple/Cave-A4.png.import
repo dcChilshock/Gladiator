@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crw1uacbh4yo4"
-path="res://.godot/imported/Cave-A4.png-b726abfe3a700b24b73bbb9551902925.ctex"
+path="res://.godot/imported/Cave-A4.png-cbeef04c8c88d2c1c8ff7193c6ed5e6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/PV_Tides_Asset_Pack/tilesets/cave_temple/Cave-A4.png"
-dest_files=["res://.godot/imported/Cave-A4.png-b726abfe3a700b24b73bbb9551902925.ctex"]
+source_file="res://ENVIROMENTS/PV_Tides_Asset_Pack/tilesets/cave_temple/Cave-A4.png"
+dest_files=["res://.godot/imported/Cave-A4.png-cbeef04c8c88d2c1c8ff7193c6ed5e6d.ctex"]
 
 [params]
 

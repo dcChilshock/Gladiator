@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3et4q6crmjgn"
-path="res://.godot/imported/desert-tileset-A2.png-9a806cb3cc27e35051d115168b27be39.ctex"
+path="res://.godot/imported/desert-tileset-A2.png-e0d02a3e5a96038f63eab092b5b3156c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enviroments/Purple Valley/tiles/desert-tileset-A2.png"
-dest_files=["res://.godot/imported/desert-tileset-A2.png-9a806cb3cc27e35051d115168b27be39.ctex"]
+source_file="res://ENVIROMENTS/Purple Valley/tiles/desert-tileset-A2.png"
+dest_files=["res://.godot/imported/desert-tileset-A2.png-e0d02a3e5a96038f63eab092b5b3156c.ctex"]
 
 [params]
 
